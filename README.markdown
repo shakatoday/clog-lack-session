@@ -6,7 +6,7 @@ For using [lack-middleware-session](https://github.com/fukamachi/lack/blob/maste
                  :lack-middleware-list `(,lack.middleware.session:*lack-middleware-session*
                                          ,clog-lack-session:*middleware*))
 ```
-Then, you can use ```(clog-lack-session:current-session clog-obj)``` to get the server side user session as a ```hash-table```
+Then, you can use ```(clog-lack-session:current-session clog-obj)``` to get the server-side session as a ```hash-table```
 
 ### Sample code
 In your [CLOG](https://github.com/rabbibotton/clog) app, you can gethash to retrieve/setf server-side session based current user data
